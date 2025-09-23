@@ -1,0 +1,18 @@
+<section>
+  <header class="home-header">
+    <div class="logo">cái logo nè</div>
+    <div class="content">
+      <h1>The Seabed</h1>
+      <p>meo meo meo - anh Hiếc said</p>
+    </div>
+  </header>
+  <main class="home-main">
+    <div class="list-page">
+      @for(button of listPage; track button.id) {
+      <div class="page-item w-full">
+        <button class="w-full" matButton="filled">{{ button.name }}</button>
+      </div>
+      }
+    </div>
+  </main>
+</section>

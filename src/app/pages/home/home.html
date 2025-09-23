@@ -8,9 +8,11 @@
   </header>
   <main class="home-main">
     <div class="list-page">
-      @for(button of listPage; track button.id) {
+      @for(button of listPage; track $index) {
       <div class="page-item w-full">
-        <button class="w-full" matButton="filled">{{ button.name }}</button>
+        <button (click)="selectMenu(button)" class="w-full" matButton="filled">
+          {{ button.name }}
+        </button>
       </div>
       }
     </div>

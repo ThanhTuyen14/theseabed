@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './home.scss',
 })
 export class Home {
+  private router = inject(Router);
   listPage: any = [
     {
       name: 'Gom in',
@@ -20,4 +22,8 @@ export class Home {
   ];
 
   constructor() {}
+
+  selectMenu(item: any) {
+    this.router.navigate([item.url]);
+  }
 }

@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-deal',
   imports: [],
   templateUrl: './deal.html',
-  styleUrl: './deal.scss'
+  styleUrl: './deal.scss',
 })
 export class Deal {
-
+  listGoods: any = [];
 }

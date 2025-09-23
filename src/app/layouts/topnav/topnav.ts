@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-topnav',
   imports: [],
   templateUrl: './topnav.html',
-  styleUrl: './topnav.scss'
+  styleUrl: './topnav.scss',
 })
-export class Topnav {
-
-}
+export class Topnav {}

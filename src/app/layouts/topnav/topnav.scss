@@ -1,0 +1,16 @@
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: var(--mat-sys-primary);
+  background: var(--mat-sys-primary-container);
+  width: 100%;
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+    justify-content: space-between;
+  }
+}
